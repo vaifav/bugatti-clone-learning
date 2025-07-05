@@ -1,0 +1,393 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Michroma&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    background: transparent;
+    color: #fff;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+    font-style: normal;
+    outline: none;
+    border: none;
+}
+
+body {
+    background: #000;
+}
+
+.wrapper a:hover {
+    cursor: pointer;
+}
+
+.active-lang {
+    color: #909090;
+}
+
+section.wrapper {
+    width: 100%;
+    height: 90dvh;
+    position: relative;
+    z-index: 0;
+}
+
+main video {
+    width: 100%;
+    height: 90dvh;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+
+header ul {
+    font-weight: 300;
+    width: 95%;
+    height: 15dvh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+header ul h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    letter-spacing: 0.4rem;
+}
+
+main section.banner {
+    width: 100%;
+    height: 60dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0.08em;
+}
+
+section.banner h1 {
+    font-size: 4.5rem;
+    letter-spacing: 0.4rem;
+}
+
+section.banner button {
+    margin-top: 1rem;
+    border: 1px solid white;
+    border-radius: 50px;
+    padding-block: 12px;
+    padding-inline: 20px;
+    letter-spacing: 0.2rem;
+    transition: all 0.5s;
+}
+
+section.banner button:hover {
+    background-color: #fff;
+
+    & a {
+        color: #000;
+    }
+}
+
+section.record {
+    width: 100%;
+    height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 0;
+}
+
+.record .container {
+    width: 95%;
+    height: 85dvh;
+}
+
+.record .container video {
+    width: 95%;
+    height: 85dvh;
+    object-fit: cover;
+    border-radius: 5px;
+    position: absolute;
+    z-index: -1;
+}
+
+.record .container section {
+    height: 80vh;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: 0 auto;
+}
+
+.record .container section h1 {
+    width: 45%;
+    font-size: 4rem;
+}
+
+.record .container section div {
+    display: flex;
+    line-height: 1.5rem;
+    gap: 2rem;
+    width: 35%;
+
+    & a {
+        text-wrap: nowrap;
+        text-decoration-line: underline;
+    }
+}
+
+
+section.history {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+
+    & h1 {
+        font-size: 4rem;
+        margin-left: 3rem;
+    }
+}
+
+.history .container {
+    display: flex;
+    justify-content: space-around;
+    width: 95%;
+    margin: 0 auto;
+
+    & h2 {
+        font-size: 2.5rem;
+        margin-top: 1rem;
+    }
+
+    & a {
+        margin-top: 1rem;
+        text-decoration-line: underline;
+    }
+}
+
+
+.history .container div.card {
+    width: 31%;
+    height: 50vh;
+
+    & div {
+        width: 100%;
+        height: 40vh;
+    }
+}
+
+.history .container div.card div {
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.history .container div.card div img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: all 0.5s;
+}
+
+.history .container div.card img:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+section.comarable {
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    & img {
+        margin-inline: 3rem;
+    }
+}
+
+
+section.sports-car {
+    width: 95%;
+    height: fit-content;
+    padding-block: 5rem;
+    margin: 0 auto;
+    & h1 {
+        font-size: 4rem;
+    }
+}
+
+.sports-car .gallery {
+    width: 100%;
+    margin-top: 2rem;
+    border-radius: 10px;
+    border: 1px solid #909090;
+    background-image: linear-gradient(#4c484851, #000 50%);
+}
+
+.sports-car .gallery .container {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin: 2rem auto 2rem auto;
+
+    & figure,
+    .card-details {
+        width: 48%;
+        height: 80vh;
+        position: relative;
+    }
+
+    & div.card-container {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        border-radius: 5px;
+    }
+
+    & .card-details {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding-block: 2rem;
+        position: absolute;
+        background: #00000060;
+    }
+
+    & a {
+        text-decoration-line: underline;
+    }
+}
+
+.gallery img.card {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    transition: all 0.4s;
+    z-index: -1;
+}
+
+
+.card-details div {
+    text-align: center;
+    width: 90%;
+    height: 20%;
+    margin: 0 auto;
+
+    & img {
+        margin-top: 1rem;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+}
+
+
+section.sur-measure {
+    width: 95%;
+    height: fit-content;
+    padding-bottom: 5rem;
+    margin: 0 auto;
+
+    & h1 {
+        font-size: 4rem;
+        margin-bottom: 1rem;
+    }
+
+    & p {
+        margin-bottom: 4rem;
+    }
+}
+
+.sur-measure section {
+    width: 100%;
+    display: flex;
+    border: 1px solid rgba(255, 255, 255, 0.455);
+    background-color: #131313;
+    border-radius: 10px;
+
+    & aside {
+        width: 50%;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    & img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: all 0.5s;
+        border-radius: 10px 0px 0px 10px;
+    }
+}
+
+.sur-measure section img:hover {
+    transform: scale(1.1);
+}
+
+section.sur-measure aside div.container {
+    height: 100%;
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    & a {
+        text-decoration-line: underline;
+    }
+    
+    & h1 {
+        font-size: 4rem;
+        line-height: 4.5rem;
+        margin-bottom: 2rem;
+    }
+}
+
+
+footer  {
+    width: 100%;
+    padding: 5rem;
+    background-color: #131313;
+    
+    & a {
+        margin-right: 1.3rem;
+    }
+}
+
+footer div.container {
+    margin-bottom: 4rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer ul li {
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+}
+
+footer ul li:first-child {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+footer aside div {
+    width: 45%;
+}
